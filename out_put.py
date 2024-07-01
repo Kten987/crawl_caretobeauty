@@ -11,8 +11,9 @@ def input_product_name(source = "./in_put/link/link_product_caretobeauty_34_1.cs
 
 # Create a semaphore with a maximum of 10 concurrent tasks
 
-list_output = []
+
 def get_output(list_link):
+    list_output = []
     start_time = time.time()
     # Duyệt qua từng tên sản phẩm trong list
     len_list = len(list_link)
