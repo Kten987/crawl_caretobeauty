@@ -49,8 +49,8 @@ def get_output(list_link):
     return df_output
 
 if __name__ == "__main__":
-    for i in range(1,21):
-        product_name_list = input_product_name(f"./in_put/link/link_product_caretobeauty_1124_{i}.csv")
+    for i in range(1,2):
+        product_name_list = input_product_name(f"./in_put/link/link_product_caretobeauty_2439_{i}.csv")
         df_output = get_output(product_name_list)
-        df_output.to_csv(f"./out_put/output_caretobeauty_page_{i}_1124.csv", index=False)
+        df_output.to_csv(f"./out_put/output_caretobeauty_page_{i}_2439.csv", index=False)
         time.sleep(8)
